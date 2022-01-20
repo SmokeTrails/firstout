@@ -1,0 +1,23 @@
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 72px;
+}
+
+.customNavbar {
+    background-color: white;
+    border-bottom: 2px solid red;
+}
+
+.linkText {
+    color: black;
+}
+
+.activeText {
+    color: red;
+}
+
+.linkText:hover {
+    color: red;
+}

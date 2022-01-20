@@ -1,0 +1,19 @@
+.outerContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.innerContainer {
+    position: relative;
+    top: 150px;
+}
+
+.missingP {
+    margin-top: 10px;
+    position: relative;
+    left: 15%;
+    max-width: 70%;
+    font-size: 14pt;
+}

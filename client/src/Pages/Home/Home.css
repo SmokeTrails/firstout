@@ -1,0 +1,97 @@
+.homeContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../../Images/background2.jpg) no-repeat center center fixed;
+    background-color: red;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.homeContainer h1, .homeContainer h3 {
+    margin: 0px;
+    color: white;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    border: 0;
+    padding: 0;
+}
+
+.homeContainer h1 {
+    font-size: 11vw;
+}
+
+.homeContainer h3 {
+    font-size: max(3vw, 16pt);
+}
+
+.buttonContainer {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: max(2vw, 14pt);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.buttonContainer button:hover {
+    border: 3px solid white;
+    font-weight: bolder;
+}
+
+.phoneContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.emailContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.phoneContainer a, .emailContainer a {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    text-decoration: none;
+}
+.phoneContainer a:hover, .emailContainer a:hover {
+    font-weight: bolder;
+    color: white;
+}
+
+.emailIcon {
+    color: white;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.phoneIcon {
+    color: white;
+    margin-right: 5px;
+    font-size: 18px;
+}
+

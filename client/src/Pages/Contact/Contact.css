@@ -1,0 +1,133 @@
+.outerContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.innerContainer {
+    position: relative;
+    top: 150px;
+}
+
+.contactContainer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+}
+
+.phone, .email {
+    display: inline-flex;
+    align-items: center;
+}
+
+.phone {
+    margin-top: 10px;
+}
+
+.phone a, .email a {
+    color: black;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+.phoneIconContact, .emailIconContact {
+    margin-right: 10px;
+    font-size: 18pt;
+    color: black;
+}
+
+.hoursContainer p {
+    position: relative;
+    left: 15%;
+    margin: 0;
+    font-size: 14pt;
+}
+
+.hoursTitle {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.img1 {  
+    width: auto;
+    height: auto;
+    max-height: 330.6px;
+    max-width: 350px;
+    float: right;
+    margin-top: 10px;
+    border: 2px solid red;
+    margin-right: 15%;
+}
+
+.img2 {
+    width: auto;
+    height: auto;
+    max-height: 330.6px;
+    max-width: 350px;
+    float: right;
+    margin-top: 10px;
+    border: 2px solid red;
+    margin-right: 50px;
+}
+
+.formContainer {
+    margin-left: 15%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer input, .formContainer textarea {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.formContainer input:hover {
+    border: 2px solid red;
+}
+
+.formContainer input[type=text]:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.formContainer textarea:hover {
+    border: 2px solid red;
+}
+
+.formContainer textarea:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.formContainer button {
+    border: none;
+    background-color: red;
+    color: white;
+    width: 16%;
+    margin-bottom: 20px;
+    font-size: 14pt;
+}
+
+.formContainer button:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    .img2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .img1, .img2 {
+        display: none;
+    }
+}

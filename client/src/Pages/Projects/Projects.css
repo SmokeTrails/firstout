@@ -1,0 +1,38 @@
+.outerContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.innerContainer {
+    position: relative;
+    top: 150px;
+}
+
+.slideshowContainerLeft {
+    width: 70%;
+    margin: auto;
+    max-height: 50vh;
+    margin-bottom: 80px;
+}
+
+.slideshowContainerRight {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 80px;
+    max-height: 50vh;
+}
+
+@media only screen and (min-width: 1000px) {
+    .slideshowContainerLeft {
+        float: left;
+        width: 33%;
+        margin-left: 15%;
+    }
+
+    .slideshowContainerRight {
+        width: 33%;
+        margin-right: 15%;
+    }
+}

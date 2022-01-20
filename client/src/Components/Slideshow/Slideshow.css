@@ -1,0 +1,29 @@
+.each-fade {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    max-height: 50vh;
+}
+  
+.each-fade > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.each-fade > div img {
+    max-width: 80%;
+    height: 100%;
+    width: auto;
+}
+
+.each-fade > div video {
+    max-width: 90%;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,44 @@
+.outerContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.innerContainer {
+    position: relative;
+    top: 150px;
+}
+
+.innerContainer video {
+    width: auto;
+    height: auto;
+    max-width: 30%;
+    max-height: 70vh;
+    float: right;
+    margin-top: 10px;
+    margin-right: 15%;
+    border: 2px solid red;
+}
+
+.aboutText {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: 15%;
+    margin-top: 10px;
+    font-size: 14pt;
+}
+
+.aboutText span {
+    font-weight: bolder;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .innerContainer video {
+        display: none;
+    }
+    .aboutText {
+        width: 70%;
+    }
+}
