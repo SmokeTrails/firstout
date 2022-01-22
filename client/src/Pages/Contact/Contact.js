@@ -5,11 +5,10 @@ import './Contact.css'
 import {MdEmail} from 'react-icons/md'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import { IconContext } from 'react-icons';
-import image from '../../Images/contact.png'
-import image2 from '../../Images/contact2.jpg'
 import { send } from 'emailjs-com';
 
 export default function Contact() {
+    
     useEffect(() => {
         document.title = "Contact Us | First-out Demolition"
     })
@@ -57,11 +56,9 @@ export default function Contact() {
 
     return(
         <div className='outerContainer'>
-            <Navigation active="Contact Us" />
+            <Navigation active="Contact Us"/>
             <div className='innerContainer'>
-                <div className='pageTitleContainer'>
-                    <Title title="Contact Us" />
-                </div>
+                <Title title="Contact Us" />
                 <div className='contactContainer'>
                     <div className="email">
                         <IconContext.Provider value={{className: "emailIconContact"}}>
@@ -76,8 +73,8 @@ export default function Contact() {
                             <a href={"tel:647-6945833"}>(647) 694-5833</a>
                     </div>
                 </div>
-                <img src={image} className='img1' alt=''/>
-                <img src={image2} className='img2' alt=''/>
+                <img src='https://i.ibb.co/yPJ6ZYk/contact.png' className='img1' alt=''/>
+                <img src='https://i.ibb.co/LCCc4Vb/contact2.jpg' className='img2' alt=''/>
                 <div className='hoursContainer'>
                     <p className='hoursTitle'> Our Hours</p>
                     <p> Monday: 9am - 5pm </p>
@@ -97,6 +94,7 @@ export default function Contact() {
                     <p>{message}</p>
                     <button onClick={submitForm}>Submit</button>
                 </div>
+                <br />
             </div>    
         </div>
     )

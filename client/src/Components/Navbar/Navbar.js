@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './Navbar.css'
-import logo from '../../Images/logo.png'
 import { Navbar, Nav, Container} from 'react-bootstrap';
 
 export default function Navigation(props) {
@@ -9,7 +8,7 @@ export default function Navigation(props) {
         <Navbar className='customNavbar' variant='light' expand='sm' fixed='top'>
             <Container>
                 <Navbar.Brand href="/">
-                    <img src={logo} className="logo" alt="Home"/>
+                    <img src="https://i.ibb.co/84xtNPP/logo.png" className="logo" alt="Home"/>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">

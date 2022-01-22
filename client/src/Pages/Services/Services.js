@@ -2,9 +2,6 @@ import React, {useEffect} from 'react';
 import Navigation from '../../Components/Navbar/Navbar.js'
 import Title from '../../Components/Title/Title.js'
 import './Services.css'
-import complete from '../../Images/complete.jpeg'
-import selective from '../../Images/selective.jpg'
-import abatement from '../../Images/abatement.jpeg'
 
 export default function Services() {
     useEffect(() => {
@@ -27,10 +24,10 @@ export default function Services() {
                             project, from beginning to end.
                         </p>
                     </div>
-                    <img src={complete} alt='Complete Deconstruction' />
+                    <img src='https://i.ibb.co/pWtQfk0/complete.jpg' alt='Complete Deconstruction' />
                 </div>
                 <div className='selectiveContainer'>
-                    <img src={selective} alt='Selective Deconstruction' />
+                    <img src='https://i.ibb.co/WKSyP5K/selective.jpg' alt='Selective Deconstruction' />
                     <div className='selectiveText'>
                         <h3> Selective Deconstruction</h3>
                         <p> 
@@ -52,7 +49,7 @@ export default function Services() {
                               At First-out demolition, your health and safety is our top priority.
                         </p>
                     </div>
-                    <img src={abatement} alt='Abatement' />
+                    <img src='https://i.ibb.co/FbJM0cc/abatement.jpg' alt='Abatement' />
                 </div>
                 <br />
             </div>

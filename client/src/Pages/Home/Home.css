@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../../Images/background2.jpg) no-repeat center center fixed;
+    background: url(https://i.ibb.co/7KKf7NM/Excavator-machinery-working-on-a-big-demolition-site-of-old-building.jpg) no-repeat center center fixed;
     background-color: red;
     background-blend-mode: multiply;
     -webkit-background-size: cover;
@@ -24,11 +24,11 @@
 }
 
 .homeContainer h1 {
-    font-size: 11vw;
+    font-size: max(11vw, 45pt);
 }
 
 .homeContainer h3 {
-    font-size: max(3vw, 16pt);
+    font-size: max(3vw, 20pt);
 }
 
 .buttonContainer {
@@ -43,7 +43,7 @@
     color: white;
     border: 2px solid white;
     font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
-    font-size: max(2vw, 14pt);
+    font-size: max(2vw, 20pt);
     margin: 10px;
     cursor: pointer;
 }
@@ -74,7 +74,7 @@
 .phoneContainer a, .emailContainer a {
     color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: max(2vw, 20pt);
     font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
     text-decoration: none;
 }
@@ -86,12 +86,51 @@
 .emailIcon {
     color: white;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: max(2vw, 20pt);
 }
 
 .phoneIcon {
     color: white;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: max(2vw, 20pt);
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .buttonContainer {
+        flex-direction: column;
+    }
+
+    .phoneContainer {
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+
+    .homeContainer {
+        background: url(https://i.ibb.co/7KKf7NM/Excavator-machinery-working-on-a-big-demolition-site-of-old-building.jpg) no-repeat center center fixed;
+        background-color: red;
+        background-blend-mode: multiply;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .homeContainer h3 {
+        font-size: 16pt;
+    }
+
+    .buttonContainer button {
+        font-size: 14pt;
+    }
+
+    .phoneContainer a, .emailContainer a {
+        font-size: 14pt;
+    }
+
+    .phoneIcon, .emailIcon {
+        font-size: 16pt;
+    }
 }
 

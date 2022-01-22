@@ -75,10 +75,12 @@
 }
 
 .formContainer {
-    margin-left: 15%;
+    position: relative;
+    left: 15%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    width: 70vw;
 }
 
 .formContainer input, .formContainer textarea {
@@ -109,7 +111,7 @@
     border: none;
     background-color: red;
     color: white;
-    width: 16%;
+    width: max(16%, 80px);
     margin-bottom: 20px;
     font-size: 14pt;
 }
@@ -118,16 +120,40 @@
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1200px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 767px) {
+    .img1, .img2 {
+        display: none;
+    }
+
+    .formContainer input, .formContainer textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
     .img2 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .img1, .img2 {
-        display: none;
+@media only screen and (max-width: 400px) {
+    .phone a, .email a, .hoursContainer p {
+        font-size: 12pt;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .phoneIconContact, .emailIconContact {
+        font-size: 12pt;
+    }
+
+    .phone a, .email a, .hoursContainer p {
+        font-size: 10pt;
+    }
+
+    .hoursTitle {
+        font-size: 16pt;
     }
 }
+
