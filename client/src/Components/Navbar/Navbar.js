@@ -10,7 +10,7 @@ export default function Navigation(props) {
                 <Navbar.Brand href="/">
                     <img src="https://i.ibb.co/84xtNPP/logo.png" className="logo" alt="Home"/>
                 </Navbar.Brand>
-                <Navbar.Toggle />
+                <Navbar.Toggle/>
                 <Navbar.Collapse className="justify-content-end">
                     <Nav className="me-auto">
                         <Nav.Link href="/about-us"><span className={getClass(props.active, "About Us")}> About Us </span></Nav.Link>

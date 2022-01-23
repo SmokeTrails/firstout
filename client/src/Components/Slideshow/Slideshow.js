@@ -24,7 +24,7 @@ export default function Slideshow(props) {
                         return(
                             <div className="each-fade" key={index}>
                                 <div className="image-container">
-                                    <img src={require(`../../Images/${name}`)} alt='Hello' />
+                                    <img src={name} alt='Hello' />
                                 </div>
                             </div>
                         )

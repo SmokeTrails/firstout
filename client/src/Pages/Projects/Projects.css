@@ -28,11 +28,15 @@
     .slideshowContainerLeft {
         float: left;
         width: 33%;
+        margin: auto;
+        margin-bottom: 80px;
         margin-left: 15%;
     }
 
     .slideshowContainerRight {
         width: 33%;
+        margin: auto;
+        margin-bottom: 80px;
         margin-right: 15%;
     }
 }

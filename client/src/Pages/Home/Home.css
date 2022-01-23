@@ -134,3 +134,24 @@
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .homeContainer h1 {
+        font-size: 36pt;
+    }
+    .homeContainer h3 {
+        font-size: 14pt;
+    }
+
+    .buttonContainer button {
+        font-size: 12pt;
+    }
+
+    .phoneContainer a, .emailContainer a {
+        font-size: 12pt;
+    }
+
+    .phoneIcon, .emailIcon {
+        font-size: 14pt;
+    }
+}
+
